@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 
-content {
+#content {
     max-width: 1600px;
     margin: 0 auto;
     display: grid;
 }
 
 #logo {
-    max-height: 30px;
+    max-height: 40px;
 }
+
