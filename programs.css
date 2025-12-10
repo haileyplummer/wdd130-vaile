@@ -1,20 +1,53 @@
+#programs {
+    height: 50px;
+    border-bottom: 5px solid black;
+    padding: 2%;
+    font-size: 50px;
+    text-align: center;
+}
+
 #grid {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 20%;
 }
 
 .placeholder {
     height: 200px;
     width: 200px;
+    margin: 2%;
+    border: 5px solid black;
+    border-radius: 20px;
+    transition: width 2s, height 2s, transform 2s;
     p {    
         height: 100%;
         width: 100%;
         text-align: center;
-        line-height: 100%;
+        line-height: 175px;
     }
     img {
         display: none;
     }
+}
+
+.placeholder:hover {
+    height: 250px;
+    width: 250px;
+    transform: rotateY(180deg);
+    p { 
+        display: none;
+    }
+    img {
+        display: block;
+        height: 200px;
+        width: 200px;
+        border-radius: 17px;
+    }
+}
+img:hover {
+    height: 250px;
+    width: 250px;
+    transform: rotateY(180deg);
 }
